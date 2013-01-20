@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block extrahead %}
+<script>
+$(function() {
+	$( "#accordion" ).accordion({
+		collapsible: true
+	});
+});
+</script>
+{% endblock %}
+
+{% block content %}
+
+{% comment %} <h1>{{ name }}</h1> {% endcomment %}
+
+<h1>Name</h1>
+
+<div id="left-column">
+<h2>Skills</h2>
+
+
+<div id="accordion">
+
+{% for item in skillsLevelsMetrics %}
+
+<h3>{{item.0}} - {{item.1}}</h3>
+{% comment %} <h3><div class="skillHeader"><div class="skillName">{{item.0}}</div><div class="skillLevel">{{item.1}}</div></div></h3> {% endcomment %}
+<div>
+	<ul>
+		{% for metric in item.2 %}
+			<li>
+			{{metric}} - {{ metric.metricValue }}
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+	{% endfor %}
+</div>
+
+</div>
+
+<div id="right-column">
+<h2>Achievements</h2>
+<ul>
+	<li>1</li>
+	<li>{{ a }}</li>
+</ul>
+</div>
+{% endblock %}

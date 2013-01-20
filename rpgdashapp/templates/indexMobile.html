@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% comment %} <h1>{{ name }}</h1> {% endcomment %}
+
+Mobile!
+
+<div class="skills">
+<h2>Skills</h2>
+<p>
+	{% for item in skillsAndMetrics %}
+	{{item.0}}
+	<br>
+	<ul>
+		{% for metric in item.1 %}
+			<li>
+			{{metric}} - {{ metric.metricValue }}
+			</li>
+		{% endfor %}
+	</ul>
+	{% endfor %}
+</p>
+</div>
+
+<div class="achievements">
+<h2>Achievements</h2>
+<ul>
+	<li>1</li>
+	<li>{{ a }}</li>
+</ul>
+{% endblock %}

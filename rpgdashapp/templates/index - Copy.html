@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% comment %} <h1>{{ name }}</h1> {% endcomment %}
+
+<h1>Name</h1>
+
+<div id="left-column">
+<h2>Skills</h2>
+<p>
+	{% for item in skillsLevelsMetrics %}
+	<div class="skillHeader"><div class="skillName">{{item.0}}</div><div class="skillLevel">{{item.1}}</div></div>
+	<br>
+	<ul>
+		{% for metric in item.2 %}
+			<li>
+			{{metric}} - {{ metric.metricValue }}
+			</li>
+		{% endfor %}
+	</ul>
+	{% endfor %}
+</p>
+</div>
+
+<div id="right-column">
+<h2>Achievements</h2>
+<ul>
+	<li>1</li>
+	<li>{{ a }}</li>
+</ul>
+</div>
+{% endblock %}

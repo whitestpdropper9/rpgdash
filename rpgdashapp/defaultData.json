@@ -1,0 +1,71 @@
+[
+
+{"pk": 1, "model": "rpgdashapp.category", "fields": {"name": "Home Improvement", "description": ""}},
+{"pk": 2, "model": "rpgdashapp.category", "fields": {"name": "Finance", "description": ""}},
+{"pk": 3, "model": "rpgdashapp.category", "fields": {"name": "Music", "description": ""}},
+{"pk": 4, "model": "rpgdashapp.category", "fields": {"name": "Tech", "description": ""}},
+{"pk": 5, "model": "rpgdashapp.category", "fields": {"name": "Misc", "description": ""}},
+
+
+{"pk": 1, "model": "rpgdashapp.skill", "fields": {"name": "Yard Maintenance", "description": "", "category":1 }},
+{"pk": 2, "model": "rpgdashapp.skill", "fields": {"name": "Landscaping", "description": "", "category":1 }},
+{"pk": 3, "model": "rpgdashapp.skill", "fields": {"name": "Stock Research", "description": "", "category":2 }},
+{"pk": 4, "model": "rpgdashapp.skill", "fields": {"name": "Piano", "description": "", "category":3 }},
+{"pk": 5, "model": "rpgdashapp.skill", "fields": {"name": "Music Education", "description": "", "category":3 }},
+{"pk": 6, "model": "rpgdashapp.skill", "fields": {"name": "Machine Learning", "description": "", "category":4 }},
+{"pk": 7, "model": "rpgdashapp.skill", "fields": {"name": "Python", "description": "", "category":4 }},
+{"pk": 8, "model": "rpgdashapp.skill", "fields": {"name": "Java", "description": "", "category":4 }},
+{"pk": 9, "model": "rpgdashapp.skill", "fields": {"name": "Games", "description": "", "category":5 }},
+{"pk": 10, "model": "rpgdashapp.skill", "fields": {"name": "Cooking", "description": "", "category":5 }},
+{"pk": 11, "model": "rpgdashapp.skill", "fields": {"name": "Fishing", "description": "", "category":5 }},
+{"pk": 12, "model": "rpgdashapp.skill", "fields": {"name": "Travel", "description": "", "category":5 }},
+{"pk": 13, "model": "rpgdashapp.skill", "fields": {"name": "Patent", "description": "", "category":5 }},
+{"pk": 14, "model": "rpgdashapp.skill", "fields": {"name": "Exercise", "description": "", "category":5 }},
+
+
+{"pk": 1, "model": "rpgdashapp.achievement", "fields": {"name": "Basic Yard Maintenance", "description": "", "skill":1 }},
+
+
+{"pk": 1, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":1 }},
+{"pk": 2, "model": "rpgdashapp.metric", "fields": {"name": "Times Mowed Lawn", "skill":1 }},
+
+{"pk": 3, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":2 }},
+
+{"pk": 4, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":3 }},
+{"pk": 5, "model": "rpgdashapp.metric", "fields": {"name": "Stock Purchases", "skill":3 }},
+{"pk": 6, "model": "rpgdashapp.metric", "fields": {"name": "Number of Stocks Researched", "skill":3 }},
+
+{"pk": 7, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":4 }},
+{"pk": 8, "model": "rpgdashapp.metric", "fields": {"name": "Songs Learned", "skill":4 }},
+
+{"pk": 9, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":5 }},
+
+{"pk": 10, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":6 }},
+
+{"pk": 11, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":7 }},
+{"pk": 12, "model": "rpgdashapp.metric", "fields": {"name": "Number of Programs", "skill":7 }},
+
+{"pk": 13, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":8 }},
+{"pk": 14, "model": "rpgdashapp.metric", "fields": {"name": "Number of Programs", "skill":8 }},
+
+{"pk": 15, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":9 }},
+{"pk": 16, "model": "rpgdashapp.metric", "fields": {"name": "Games Completed", "skill":9 }},
+
+{"pk": 17, "model": "rpgdashapp.metric", "fields": {"name": "Number of Meals Cooked", "skill":10 }},
+
+{"pk": 18, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":11 }},
+
+{"pk": 19, "model": "rpgdashapp.metric", "fields": {"name": "Number of Flights", "skill":12 }},
+
+{"pk": 20, "model": "rpgdashapp.metric", "fields": {"name": "Number of Submissions", "skill":13 }},
+{"pk": 21, "model": "rpgdashapp.metric", "fields": {"name": "Number of Files", "skill":13 }},
+{"pk": 22, "model": "rpgdashapp.metric", "fields": {"name": "Number of Issues", "skill":13 }},
+
+{"pk": 23, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hours", "skill":14 }},
+{"pk": 24, "model": "rpgdashapp.metric", "fields": {"name": "Number of Gym Trips", "skill":14 }},
+{"pk": 25, "model": "rpgdashapp.metric", "fields": {"name": "Number of Hikes", "skill":14 }},
+
+
+{"pk": 1, "model": "rpgdashapp.person", "fields": {"name": "Jason Anderson", "birthday": "1987-06-04", "image": "personalPhoto.png"  }}
+
+]
